@@ -1,5 +1,5 @@
 import React from 'react';
-import ColourButton from './ColourButton';
+import ColourButton from '../containers/ColourButtonContainer';
 
 export default ({ difficulty, handleColourChange }) => (
   <div className='controls-container'>

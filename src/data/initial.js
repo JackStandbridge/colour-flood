@@ -6,6 +6,7 @@ const initial = {
   height: 10,
   width: 10,
   colour: 0,
+  moves: 0,
 };
 
 initial.board = calculateNewBoard(generateBoard(initial.height, initial.width, initial.difficulty), initial.colour);

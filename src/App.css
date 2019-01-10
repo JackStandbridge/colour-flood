@@ -4,6 +4,10 @@ body {
   padding-top: 4rem;
 }
 
+.flex {
+  display: flex;
+}
+
 .board {
   width: 35rem;
   height: 35rem;

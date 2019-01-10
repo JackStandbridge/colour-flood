@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-export default ({ handleClick, colour }) => (
+export default ({ handleClick, colour, incrementMoves }) => (
   <button
-    onClick={ handleClick }
+    onClick={ () => {handleClick(); incrementMoves();} }
     className={`button colour${colour}`}
   >
   </button>

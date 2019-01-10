@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Score from '../components/Score';
 
-const mapState = ({ score }) => ({ score });
+const mapState = ({ moves }) => ({ moves });
 
 export default connect(mapState)(Score);

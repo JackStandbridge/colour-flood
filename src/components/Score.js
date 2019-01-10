@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default () => (
-  <aside>This is the Score</aside>
+export default ({ moves }) => (
+  <aside>{ moves }</aside>
 )
