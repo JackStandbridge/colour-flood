@@ -1,28 +1,25 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+import initial from './data/initial';
+import reducer from './data/reducer';
 
-export default App;
+import Board from './containers/BoardContainer';
+import Controls from './containers/ControlsContainer';
+import Score from './containers/ScoreContainer';
+
+const store = createStore(
+  reducer,
+  initial,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
+export default () => (
+  <Provider store={ store }>
+    <Board />
+    <Controls />
+    <Score />
+  </Provider>
+);

@@ -1,32 +1,77 @@
-.App {
-  text-align: center;
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.board {
+  width: 35rem;
+  height: 35rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
 
-.App-link {
-  color: #61dafb;
+.square {
+  width: 100%;
+  height: 100%;
+  margin: .1rem;
+  border-radius: 15px;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row {
+  display: flex;
+  margin: .1rem;
+  width: 100%;
+  height: 100%;
+}
+
+.controls-container {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  box-sizing: border-box;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.colour0 {
+  background: hsla(0, 100%, 80%, 1);
+  border: 4px solid hsla(0, 80%, 40%, 1);
+}
+
+.colour1 {
+  background: hsla(120, 100%, 80%, 1);
+  border: 4px solid hsla(120, 80%, 40%, 1);
+}
+
+.colour2 {
+  background: hsla(240, 100%, 80%, 1);
+  border: 4px solid hsla(240, 80%, 40%, 1);
+}
+
+.colour3 {
+  background: hsla(60, 100%, 80%, 1);
+  border: 4px solid hsla(60, 80%, 40%, 1);
+}
+
+.colour4 {
+  background: hsla(180, 100%, 80%, 1);
+  border: 4px solid hsla(180, 80%, 40%, 1);
+}
+
+.colour5 {
+  background: hsla(300, 100%, 80%, 1);
+  border: 4px solid hsla(300, 80%, 40%, 1);
 }
