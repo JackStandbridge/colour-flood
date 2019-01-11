@@ -6,16 +6,13 @@ export default ({ difficulty, handleColourChange }) => (
     {
       Array(difficulty)
       .fill('')
-      .map((colour, index) => {
-        return (
-          <ColourButton
-            key={ index }
-            handleClick={ () => handleColourChange(index) }
-            colour={ index }
-          />
-        )
-      })
+      .map((colour, index) => (
+        <ColourButton
+          key={ index }
+          handleClick={ () => handleColourChange(index) }
+          colour={ index }
+        />
+      ))
     }
   </div>
 )
-
