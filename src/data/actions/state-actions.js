@@ -6,3 +6,7 @@ export const changeColour = colour => ({
 export const incrementMoves = () => ({
   type: 'incrementMoves',
 })
+
+export const resetBoard = () => ({
+  type: 'resetBoard',
+})
