@@ -18,10 +18,10 @@ const store = createStore(
 
 export default () => (
   <Provider store={ store }>
-    <div>
+    <main>
       <Board />
       <Controls />
-    </div>
+    </main>
     <Score />
   </Provider>
 );
