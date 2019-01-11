@@ -9,6 +9,15 @@ const initial = {
   moves: 0,
 };
 
-initial.board = calculateNewBoard(generateBoard(initial.height, initial.width, initial.difficulty), initial.colour);
+// pipe generateBoard through calculateNewBoard
+// to fill in X's where colours just happend to
+// be adjacent from start.
+initial.board = calculateNewBoard(
+  generateBoard(
+    initial.height,
+    initial.width,
+    initial.difficulty
+  ), initial.colour
+);
 
 export default initial;

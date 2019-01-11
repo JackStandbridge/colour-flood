@@ -1,50 +1,53 @@
 export default (board, newColour) => {
-  let prevBoard = [...board];
+  let prevBoard = board;
 
-  const explore = board => {
+  const explore = board => (
 
-    let newBoard = board.map((row, yCoord) => {
+    board.map((row, yCoord) => (
 
-      let newRow = row.map((square, xCoord) => {
+      row.map((square, xCoord) => (
 
-        let newSquare = [
+        // checks around the current square
+        [
           { x: xCoord, y: yCoord - 1 }, // top
           { x: xCoord + 1, y: yCoord }, // right
           { x: xCoord, y: yCoord + 1 }, // bottom
           { x: xCoord - 1, y: yCoord }, // left
-        ].filter(coords => {
-          return (
-            coords.x >= 0 &&
-            coords.y >= 0 &&
-            coords.x < board.length &&
-            coords.y < row.length
-          );
-        }).map(coords => (
+        ]
+
+        // make sure neighbours are in bounds
+        .filter(coords => (
+          coords.x >= 0 &&
+          coords.y >= 0 &&
+          coords.x < board.length &&
+          coords.y < row.length
+        ))
+
+        // get contents of neighbour
+        .map(coords => (
           board[coords.y][coords.x]
-        )).reduce((acc, value) => {
-          return value === 'X' && acc === newColour ? 'X' : acc;
-        }, square);
+        ))
 
-        return newSquare;
+        // check if neighbour is X and current square is
+        // new colour and change square to X if so
+        .reduce((acc, value) => (
+          value === 'X' && acc === newColour ? 'X' : acc
+        ), square)
 
-      });
+      ))
 
-      return newRow;
+    ))
 
-    });
+  )
 
-    return newBoard;
-
-  }
-
-  let newBoard = explore([...prevBoard]);
+  let newBoard = explore(prevBoard);
 
   // function only adds nearest neighbours, but may have to
   // reach further. Keep checking until the new board is the
   // same as the previous one.
-  while (JSON.stringify([...newBoard]) !== JSON.stringify([...prevBoard])) {
-    prevBoard = [...newBoard];
-    newBoard = explore([...prevBoard]);
+  while (JSON.stringify(newBoard) !== JSON.stringify(prevBoard)) {
+    prevBoard = newBoard;
+    newBoard = explore(prevBoard);
   }
 
   return newBoard;
