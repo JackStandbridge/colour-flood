@@ -1,5 +1,6 @@
 import React from 'react';
 import ResetButton from '../containers/ResetButtonContainer';
+import Difficulty from '../containers/DifficultyContainer';
 
 export default ({ moves, bestScore }) => (
   <aside>
@@ -8,5 +9,6 @@ export default ({ moves, bestScore }) => (
     <h1>Best:</h1>
     <div className='score'>{ bestScore === Infinity ? '-' : bestScore < 10 ? `0${bestScore}` : bestScore }</div>
     <ResetButton />
+    <Difficulty />
   </aside>
 )

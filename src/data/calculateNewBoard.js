@@ -49,7 +49,7 @@ export default (board, newColour) => {
     prevBoard = newBoard;
     newBoard = explore(prevBoard);
   }
-  console.log(newBoard);
+
   return newBoard;
 
 }

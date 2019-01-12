@@ -2,7 +2,7 @@ import generateBoard from './generateBoard';
 import calculateNewBoard from './calculateNewBoard';
 
 const initial = {
-  difficulty: 6,
+  difficulty: 4,
   height: 10,
   width: 10,
   colour: 0,
