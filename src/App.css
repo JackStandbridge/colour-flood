@@ -1,3 +1,7 @@
+:root {
+  font-size: calc(8px + .5vw);
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -19,9 +23,11 @@ aside {
 }
 
 h1, button {
-  font-size: 50px;
+  font-size: 3rem;
   text-align: center;
   background: none;
+  font-weight: bold;
+  font-family: Simplifica;
 }
 
 h1 {
@@ -72,10 +78,14 @@ h1 {
 }
 
 .button {
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
   box-sizing: border-box;
+}
+
+.reset {
+  padding: .5rem 1rem 0 1rem;
 }
 
 button:focus {
