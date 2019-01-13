@@ -2,6 +2,11 @@
   font-size: calc(8px + .5vw);
 }
 
+@font-face {
+  font-family: 'Simplifica';
+  src: url('./assets/Simplifica.ttf') format('truetype');
+}
+
 body {
   display: flex;
   justify-content: center;
@@ -14,7 +19,7 @@ body {
 }
 
 aside {
-  font-family: Simplifica;
+  font-family: 'Simplifica', 'Wire One', sans-serif;
   padding-top: .4rem;
   display: flex;
   flex-direction: column;
@@ -27,7 +32,7 @@ h1, button {
   text-align: center;
   background: none;
   font-weight: bold;
-  font-family: Simplifica;
+  font-family: 'Simplifica', 'Wire One', sans-serif;
 }
 
 h1 {
