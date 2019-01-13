@@ -7,7 +7,11 @@ const initial = {
   width: 10,
   colour: 0,
   moves: 0,
-  bestScore: Infinity,
+  bestScore: {
+    4: Infinity,
+    5: Infinity,
+    6: Infinity,
+  },
 };
 
 // pipe generateBoard through calculateNewBoard
