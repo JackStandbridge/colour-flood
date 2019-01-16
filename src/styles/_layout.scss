@@ -1,0 +1,14 @@
+:root {
+  font-size: calc(8px + .5vw);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.game {
+  border: 5px solid lightgrey;
+  padding: 1rem;
+}
