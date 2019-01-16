@@ -1,29 +1,42 @@
+$red: rgb(255, 153, 153);
+$redDark: rgb(204, 0, 0);
+$green: rgb(153, 255, 153);
+$greenDark: rgb(0, 204, 0);
+$blue: rgb(153, 153, 255);
+$blueDark: rgb(0, 0, 204);
+$yellow: rgb(255, 255, 153);
+$yellowDark: rgb(204, 204, 0);
+$cyan: rgb(153, 255, 255);
+$cyanDark: rgb(0, 204, 204);
+$magenta: rgb(255, 153, 255);
+$magentaDark: rgb(204, 0, 204);
+
 .colour0 {
-  background: rgb(255, 153, 153);
-  border: 4px solid rgb(204, 0, 0);
+  background: $red;
+  border: .3rem solid $redDark;
 }
 
 .colour1 {
-  background: rgb(153, 255, 153);
-  border: 4px solid rgb(0, 204, 0);
+  background: $green;
+  border: .3rem solid $greenDark;
 }
 
 .colour2 {
-  background: rgb(153, 153, 255);
-  border: 4px solid rgb(0, 0, 204);
+  background: $blue;
+  border: .3rem solid $blueDark;
 }
 
 .colour3 {
-  background: rgb(255, 255, 153);
-  border: 4px solid rgb(204, 204, 0);
+  background: $yellow;
+  border: .3rem solid $yellowDark;
 }
 
 .colour4 {
-  background: rgb(153, 255, 255);
-  border: 4px solid rgb(0, 204, 204);
+  background: $cyan;
+  border: .3rem solid $cyanDark;
 }
 
 .colour5 {
-  background: rgb(255, 153, 255);
-  border: 4px solid rgb(204, 0, 204);
+  background: $magenta;
+  border: .3rem solid $magentaDark;
 }

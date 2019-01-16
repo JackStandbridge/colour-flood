@@ -1,0 +1,49 @@
+.pipe {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: .5rem;
+  box-sizing: border-box;
+}
+
+.pipeColour0 {
+  background: $red
+}
+
+.pipeColour1 {
+  background: $green
+}
+
+.pipeColour2 {
+  background: $blue
+}
+
+.pipeColour3 {
+  background: $yellow
+}
+
+.pipeColour4 {
+  background: $cyan
+}
+
+.pipeColour5 {
+  background: $magenta
+}
+
+.pipe1 {
+  top: 1.3rem;
+  left: -3.3rem;
+  width: 5rem;
+}
+
+.pipe2 {
+  top: 1.3rem;
+  left: -3.3rem;
+  bottom: 2.5rem;
+  height: unset;
+}
+
+.pipe3 {
+  bottom: 2.5rem;
+  left: -3.3rem;
+}

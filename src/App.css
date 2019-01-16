@@ -1,26 +1,26 @@
 .colour0 {
   background: #ff9999;
-  border: 4px solid #cc0000; }
+  border: 0.3rem solid #cc0000; }
 
 .colour1 {
   background: #99ff99;
-  border: 4px solid #00cc00; }
+  border: 0.3rem solid #00cc00; }
 
 .colour2 {
   background: #9999ff;
-  border: 4px solid #0000cc; }
+  border: 0.3rem solid #0000cc; }
 
 .colour3 {
   background: #ffff99;
-  border: 4px solid #cccc00; }
+  border: 0.3rem solid #cccc00; }
 
 .colour4 {
   background: #99ffff;
-  border: 4px solid #00cccc; }
+  border: 0.3rem solid #00cccc; }
 
 .colour5 {
   background: #ff99ff;
-  border: 4px solid #cc00cc; }
+  border: 0.3rem solid #cc00cc; }
 
 @font-face {
   font-family: 'Simplifica';
@@ -39,6 +39,9 @@ body {
 .game {
   border: 5px solid lightgrey;
   padding: 1rem; }
+
+main {
+  position: relative; }
 
 .board {
   width: 35rem;
@@ -121,5 +124,45 @@ button:focus {
 
 .difficulty button:active {
   border: none; }
+
+.pipe {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  border-radius: .5rem;
+  box-sizing: border-box; }
+
+.pipeColour0 {
+  background: #ff9999; }
+
+.pipeColour1 {
+  background: #99ff99; }
+
+.pipeColour2 {
+  background: #9999ff; }
+
+.pipeColour3 {
+  background: #ffff99; }
+
+.pipeColour4 {
+  background: #99ffff; }
+
+.pipeColour5 {
+  background: #ff99ff; }
+
+.pipe1 {
+  top: 1.3rem;
+  left: -3.3rem;
+  width: 5rem; }
+
+.pipe2 {
+  top: 1.3rem;
+  left: -3.3rem;
+  bottom: 2.5rem;
+  height: unset; }
+
+.pipe3 {
+  bottom: 2.5rem;
+  left: -3.3rem; }
 
 /*# sourceMappingURL=App.css.map */

@@ -20,9 +20,9 @@ const store = createStore(
 export default () => (
   <Provider store={ store }>
     <main>
+      <Pipe />
       <Board />
       <Controls />
-      <Pipe />
     </main>
     <Score />
   </Provider>
