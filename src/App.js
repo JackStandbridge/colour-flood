@@ -9,6 +9,7 @@ import reducer from './data/reducer';
 import Board from './containers/BoardContainer';
 import Controls from './containers/ControlsContainer';
 import Score from './containers/ScoreContainer';
+import Pipe from './containers/PipeContainer';
 
 const store = createStore(
   reducer,
@@ -21,6 +22,7 @@ export default () => (
     <main>
       <Board />
       <Controls />
+      <Pipe />
     </main>
     <Score />
   </Provider>
