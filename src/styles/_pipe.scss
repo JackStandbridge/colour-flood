@@ -13,7 +13,7 @@
     position: absolute;
     height: .3rem;
     width: .3rem;
-    transition: background-color .5s .5s;
+    transition: background-color .5s .5s, border-color .5s .5s, left .5s, width .5s;
   }
 }
 
@@ -81,8 +81,9 @@
   border-bottom-right-radius: 0;
   border-bottom: none;
   &::after {
-    width: 4.6rem;
+    width: calc(100% - .4rem);
     bottom: 0;
+    left: 0;
   }
 }
 
@@ -96,8 +97,8 @@
   border-right: none;
   &::after {
     right: 0;
-    top: .35rem;
-    height: 46rem;
+    top: .4rem;
+    height: calc(100% - .8rem);
   }
 }
 
