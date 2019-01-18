@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Colour Flood
 
-## Available Scripts
+A React/Redux web app I made that recreates the classic game Colour Flood/Flood It.
 
-In the project directory, you can run:
+[Play the game here](https://jackstandbridge.github.io/colour-flood/).
 
-### `npm start`
+The app was done as a practice project to try making a game with React/Redux.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+It currently supports a 10x10 grid that can be randomized to include 4, 5 or 6 colours to create different levels. In addition, it tracks the number of moves taken to flood the board, and the best score for each of the levels.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+The project is hosted on github pages using the gh-pages package, which creates a branch for github pages display purposes. To get a React app to display on github pages, follow these steps:
 
-### `npm test`
+- `$ npm install gh-pages`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- add `"homepage": "https://<github username>.github.io/<project name>/"` to package.json
 
-### `npm run build`
+- add `"predeploy": "npm run build"` to package.json in the "scripts" object.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- add `"deploy": "gh-pages -d build"` to package.json in the "scripts" object.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+- `$ npm run deploy`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Features that could be added:
 
-### `npm run eject`
+- Some kind of resizing of the board to allow 5x5, 10x10, 15x15 sized boards, etc.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Some kind of notice to the player that they have won when they completely fill the board.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- An undo button.
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Data persistence to save the high score for returning players.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Reimagined game setup where the player can move the place where the colours are piped into the board
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Clicking colours on the game board switches to that colour.
