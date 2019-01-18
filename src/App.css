@@ -68,7 +68,7 @@ main {
   margin: .1rem;
   border-radius: .8rem;
   box-sizing: border-box;
-  transition: background .5s .5s, border-color .5s .5s; }
+  transition: background .2s .2s, border-color .2s .2s; }
 
 .row {
   display: flex;
@@ -156,14 +156,14 @@ h1 {
   border-width: .3rem;
   border-style: solid;
   box-sizing: border-box;
-  transition: background-color .5s .5s, border-color .5s .5s, left .5s, width .5s; }
+  transition: background-color .2s .2s, border-color .2s .2s, left .2s, width .2s; }
   .pipe::after {
     content: '';
     display: block;
     position: absolute;
     height: .3rem;
     width: .3rem;
-    transition: background-color .5s .5s, border-color .5s .5s, left .5s, width .5s; }
+    transition: background-color .2s .2s, border-color .2s .2s, left .2s, width .2s; }
 
 .pipeColour0 {
   background: #ff9999;
