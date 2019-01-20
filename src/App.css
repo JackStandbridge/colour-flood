@@ -33,15 +33,12 @@
   @media only screen and (max-width: 900px) {
     :root {
       font-size: 14px; } }
-  @media only screen and (max-width: 750px) {
+  @media only screen and (max-width: 800px) {
     :root {
       font-size: 12px; } }
-  @media only screen and (max-width: 650px) {
+  @media only screen and (max-width: 700px) {
     :root {
       font-size: 10px; } }
-  @media only screen and (max-width: 550px) {
-    :root {
-      font-size: 8px; } }
 
 body {
   display: flex;
@@ -51,6 +48,10 @@ body {
 .game {
   border: 5px solid lightgrey;
   padding: 1rem; }
+  @media only screen and (max-width: 575px) {
+    .game {
+      flex-direction: column;
+      max-width: 35rem; } }
 
 main {
   position: relative; }
@@ -97,6 +98,12 @@ aside {
   align-items: center;
   justify-content: space-between;
   margin-left: 1rem; }
+  @media only screen and (max-width: 575px) {
+    aside {
+      flex-direction: row;
+      padding-top: 4rem;
+      align-items: center;
+      flex-wrap: wrap; } }
 
 h1, button {
   font-size: 3rem;
@@ -125,8 +132,20 @@ h1 {
   padding: .5rem 1rem 0 1rem;
   margin: 0 0 2rem; }
 
+@media only screen and (max-width: 575px) {
+  .reset, .difficulty {
+    width: 50%;
+    margin: 0; } }
+
+@media only screen and (max-width: 575px) {
+  .difficulty {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; } }
+
 .difficulty h1 {
-  margin-top: 1rem; }
+  margin-top: 1rem;
+  width: 100%; }
 
 .difficulty button {
   font-size: 1.3rem;
