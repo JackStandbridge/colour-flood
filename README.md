@@ -26,10 +26,10 @@ The project is hosted on github pages using the gh-pages package, which creates 
 
 - Some kind of notice to the player that they have won when they completely fill the board.
 
-- An undo button.
+- ~~An undo button.~~ Complete
 
 - Data persistence to save the high score for returning players.
 
 - Reimagined game setup where the player can move the place where the colours are piped into the board
 
-- Clicking colours on the game board switches to that colour.
+- ~~Clicking colours on the game board switches to that colour.~~ Complete
