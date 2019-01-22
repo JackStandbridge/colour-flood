@@ -15,3 +15,7 @@ export const updateDifficulty = difficulty => ({
   type: 'updateDifficulty',
   difficulty: difficulty,
 });
+
+export const undo = () => ({
+  type: 'undo',
+})

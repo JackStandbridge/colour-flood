@@ -7,6 +7,7 @@ const initial = {
   width: 10,
   colour: 0,
   moves: 0,
+  history: [],
   bestScore: {
     4: Infinity,
     5: Infinity,
