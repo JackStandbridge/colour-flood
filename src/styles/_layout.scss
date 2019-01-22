@@ -9,19 +9,26 @@
   @media only screen and (max-width: 700px) {
     font-size: 10px;
   }
+  @media only screen and (max-width: 600px) {
+    font-size: 8px;
+  }
 }
 
 body {
   display: flex;
   justify-content: center;
   padding-top: 4rem;
+
+  @media only screen and (max-width: 600px) {
+    padding-top: 1rem;
+  }
 }
 
 .game {
   border: 5px solid lightgrey;
   padding: 1rem;
 
-  @media only screen and (max-width: 575px) {
+  @media only screen and (max-width: 600px) {
     flex-direction: column;
     max-width: 35rem;
   }

@@ -31,6 +31,8 @@
 }
 
 .button {
+  // set padding to 0 to fix ios button sizing
+  padding: 0;
   width: 4rem;
   height: 4rem;
   border-radius: 2rem;
