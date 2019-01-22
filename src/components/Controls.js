@@ -1,7 +1,7 @@
 import React from 'react';
-import ColourButton from '../containers/ColourButtonContainer';
+import ColourButton from './ColourButton';
 
-export default ({ difficulty, handleColourChange, playerColour, incrementMoves }) => (
+export default ({ difficulty, handleColourChange }) => (
   <div className='controls-container'>
     {
       Array(difficulty)
@@ -9,12 +9,7 @@ export default ({ difficulty, handleColourChange, playerColour, incrementMoves }
       .map((colour, index) => (
         <ColourButton
           key={ index }
-          handleClick={ () => {
-            handleColourChange(index);
-            if (playerColour !== index) {
-              incrementMoves()
-            }
-          }}
+          handleClick={ () => handleColourChange(index) }
           colour={ index }
         />
       ))
