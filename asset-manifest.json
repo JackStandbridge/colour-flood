@@ -1,14 +1,14 @@
 {
-  "main.css": "/colour-flood/static/css/main.4bdc631b.chunk.css",
-  "main.js": "/colour-flood/static/js/main.5d4bb6e4.chunk.js",
-  "main.js.map": "/colour-flood/static/js/main.5d4bb6e4.chunk.js.map",
-  "static/js/1.6ab7af26.chunk.js": "/colour-flood/static/js/1.6ab7af26.chunk.js",
-  "static/js/1.6ab7af26.chunk.js.map": "/colour-flood/static/js/1.6ab7af26.chunk.js.map",
+  "main.css": "/colour-flood/static/css/main.a5c2e765.chunk.css",
+  "main.js": "/colour-flood/static/js/main.154252ec.chunk.js",
+  "main.js.map": "/colour-flood/static/js/main.154252ec.chunk.js.map",
+  "static/js/1.524b08fb.chunk.js": "/colour-flood/static/js/1.524b08fb.chunk.js",
+  "static/js/1.524b08fb.chunk.js.map": "/colour-flood/static/js/1.524b08fb.chunk.js.map",
   "runtime~main.js": "/colour-flood/static/js/runtime~main.2fe32972.js",
   "runtime~main.js.map": "/colour-flood/static/js/runtime~main.2fe32972.js.map",
   "static/media/App.css": "/colour-flood/static/media/Simplifica.22dd36f6.ttf",
-  "static/css/main.4bdc631b.chunk.css.map": "/colour-flood/static/css/main.4bdc631b.chunk.css.map",
+  "static/css/main.a5c2e765.chunk.css.map": "/colour-flood/static/css/main.a5c2e765.chunk.css.map",
   "index.html": "/colour-flood/index.html",
-  "precache-manifest.9986b1758ba56c00b70da38c3e0592ae.js": "/colour-flood/precache-manifest.9986b1758ba56c00b70da38c3e0592ae.js",
+  "precache-manifest.ec167db3487084fb2250c4a1a3a31983.js": "/colour-flood/precache-manifest.ec167db3487084fb2250c4a1a3a31983.js",
   "service-worker.js": "/colour-flood/service-worker.js"
 }
