@@ -1,7 +1,7 @@
 {
   "main.css": "/colour-flood/static/css/main.a5c2e765.chunk.css",
-  "main.js": "/colour-flood/static/js/main.154252ec.chunk.js",
-  "main.js.map": "/colour-flood/static/js/main.154252ec.chunk.js.map",
+  "main.js": "/colour-flood/static/js/main.94e0231d.chunk.js",
+  "main.js.map": "/colour-flood/static/js/main.94e0231d.chunk.js.map",
   "static/js/1.524b08fb.chunk.js": "/colour-flood/static/js/1.524b08fb.chunk.js",
   "static/js/1.524b08fb.chunk.js.map": "/colour-flood/static/js/1.524b08fb.chunk.js.map",
   "runtime~main.js": "/colour-flood/static/js/runtime~main.2fe32972.js",
@@ -9,6 +9,6 @@
   "static/media/App.css": "/colour-flood/static/media/Simplifica.22dd36f6.ttf",
   "static/css/main.a5c2e765.chunk.css.map": "/colour-flood/static/css/main.a5c2e765.chunk.css.map",
   "index.html": "/colour-flood/index.html",
-  "precache-manifest.ec167db3487084fb2250c4a1a3a31983.js": "/colour-flood/precache-manifest.ec167db3487084fb2250c4a1a3a31983.js",
+  "precache-manifest.ebe3ffe03eb61b9d22937f64c8435a7a.js": "/colour-flood/precache-manifest.ebe3ffe03eb61b9d22937f64c8435a7a.js",
   "service-worker.js": "/colour-flood/service-worker.js"
 }
