@@ -19,3 +19,7 @@ export const updateDifficulty = difficulty => ({
 export const undo = () => ({
   type: 'undo',
 })
+
+export const opponentMove = () => ({
+  type: 'opponentMove',
+})
